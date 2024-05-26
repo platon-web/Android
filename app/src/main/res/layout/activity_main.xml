@@ -1,0 +1,96 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ПІП -->
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ПІП"
+            android:inputType="textPersonName" />
+
+        <!-- Вік -->
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Вік"
+            android:inputType="number" />
+
+        <!-- Повзунок із бажаною зарплатою -->
+        <TextView
+            android:id="@+id/tv_salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Зарплата: 1200$" />
+
+        <SeekBar
+            android:id="@+id/sb_salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="1700"
+            android:progress="1200" />
+
+        <!-- Питання з мови програмування (приклад одного питання) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Скільки типів даних в Java?" />
+
+        <RadioGroup
+            android:id="@+id/rg_question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rb_q1_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6" />
+            <RadioButton android:id="@+id/rb_q1_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7" />
+            <RadioButton android:id="@+id/rb_q1_c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8" />
+            <RadioButton android:id="@+id/rb_q1_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9" />
+        </RadioGroup>
+
+        <!-- Повторіть блок RadioGroup для кожного з 5 питань -->
+
+        <!-- Досвід роботи від 2 років -->
+        <CheckBox
+            android:id="@+id/cb_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Досвід роботи від 2 років" />
+
+        <!-- Навички командної розробки -->
+        <CheckBox
+            android:id="@+id/cb_teamwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Навички командної розробки" />
+
+        <!-- Готовність до відряджень -->
+        <CheckBox
+            android:id="@+id/cb_travel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Готовність до відряджень" />
+
+        <!-- Кнопка "Здати тест" -->
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Здати тест"
+            android:enabled="false" />
+
+        <!-- Текстове поле з результатом -->
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Результат" />
+    </LinearLayout>
+</ScrollView>
