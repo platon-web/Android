@@ -46,10 +46,11 @@ public class MainActivity extends AppCompatActivity {
         tvSalary = findViewById(R.id.tv_salary);
         tvResult = findViewById(R.id.tv_result);
         rgQuestion1 = findViewById(R.id.rg_question1);
-        rgQuestion2 = findViewById(R.id.rg_question2);
-        rgQuestion3 = findViewById(R.id.rg_question2);
-        rgQuestion4 = findViewById(R.id.rg_question2);
-        rgQuestion5 = findViewById(R.id.rg_question2);
+        rgQuestion2 = findViewById(R.id.rg_question1);
+        rgQuestion3 = findViewById(R.id.rg_question1);
+        rgQuestion4 = findViewById(R.id.rg_question1);
+        rgQuestion5 = findViewById(R.id.rg_question1);
+        //Codeium: Your IDE and extension versions are too old. Update your IDE to 2022.3+ and install the latest extension. For help, contact us on Discord at https://discord.gg/3XFf78nAx5.);
         cbExperience = findViewById(R.id.cb_experience);
         cbTeamwork = findViewById(R.id.cb_teamwork);
         cbTravel = findViewById(R.id.cb_travel);
@@ -123,7 +124,6 @@ public class MainActivity extends AppCompatActivity {
         int score = 0;
 
         if (rgQuestion1.getCheckedRadioButtonId() == R.id.rb_q1_c) score += 2;
-        // Повторіть для інших питань (rgQuestion2, rgQuestion3, rgQuestion4, rgQuestion5)
 
         if (cbExperience.isChecked()) score += 2;
         if (cbTeamwork.isChecked()) score += 1;
@@ -135,4 +135,5 @@ public class MainActivity extends AppCompatActivity {
     private void showToast(String message) {
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }
+    //2021
 }

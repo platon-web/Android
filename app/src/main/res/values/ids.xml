@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="rg_question2" type="id">3</item>
+    <item name="rg_question2" type="id">1</item>
+    <item name="rg_question3" type="id">2</item>
+    <item name="rg_question4" type="id">4</item>
+    <item name="rg_question5" type="id">5</item>
 </resources>
